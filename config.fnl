@@ -121,7 +121,7 @@
         ;; Tab Bar Configuration
         ;; -------------------------------------------------------------------------
         :hide_tab_bar_if_only_one_tab true
-        :tab_bar_at_bottom true
+        :tab_bar_at_bottom false
         :use_fancy_tab_bar false
         :colors {:tab_bar tab-bar-config}
         ;; -------------------------------------------------------------------------
