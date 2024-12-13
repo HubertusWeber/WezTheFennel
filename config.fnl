@@ -122,8 +122,13 @@
         ;; -------------------------------------------------------------------------
         :hide_tab_bar_if_only_one_tab true
         :tab_bar_at_bottom false
-        :use_fancy_tab_bar false
+        :use_fancy_tab_bar true
         :colors {:tab_bar tab-bar-config}
+        :window_frame {:active_titlebar_bg nord0
+                       :inactive_titlebar_bg nord0
+                       :font_size 16.0
+                       :font (wezterm.font {:family "Hack Nerd Font"
+                                            :weight :Bold})}
         ;; -------------------------------------------------------------------------
         ;; Input Configuration
         ;; -------------------------------------------------------------------------
