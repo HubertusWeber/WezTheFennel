@@ -144,6 +144,12 @@
         :max_fps 240
         :animation_fps 240
         ;; -------------------------------------------------------------------------
+        ;; Automatically Yank Selected Text
+        ;; -------------------------------------------------------------------------
+        :mouse_bindings [{:event {:Up {:streak 1 :button "Left"}}
+                          :mods "NONE"
+                          :action (wezterm.action.CompleteSelection "ClipboardAndPrimarySelection")}]
+        ;; -------------------------------------------------------------------------
         ;; Miscellaneous Settings
         ;; -------------------------------------------------------------------------
         :audible_bell "Disabled"
