@@ -1,6 +1,6 @@
 # 🫖 WezTheFennel
 
-My personal [WezTerm](https://wezfurlong.org/wezterm/) configuration written in [Fennel](https://fennel-lang.org/), featuring Nord theme and vim-inspired keybindings. 
+My personal [WezTerm](https://wezfurlong.org/wezterm/) configuration written in [Fennel](https://fennel-lang.org/). 
 
 ## 🚀 Prerequisites
 
