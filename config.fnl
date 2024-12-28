@@ -6,46 +6,37 @@
 (local act wezterm.action)
 
 ;; =============================================================================
-;; Nord Color Theme Configuration
-;; =============================================================================
-
-(local nord0 "#2E3440")
-
-;; Polar Night (darkest)
-(local nord1 "#3B4252")
-
-;; Polar Night (darker)
-(local nord3 "#4C566A")
-
-;; Polar Night (lighter)
-(local nord4 "#D8DEE9")
-
-;; Snow Storm (darkest)
-(local nord5 "#E5E9F0")
-
-;; Snow Storm (medium)
-(local nord6 "#ECEFF4")
-
-;; Snow Storm (lightest)
-
-;; =============================================================================
 ;; Tab Bar Configuration
 ;; =============================================================================
 
-(local tab-bar-config {:background nord0
-                       ;; Active tab appearance
-                       :active_tab {:bg_color nord0 :fg_color nord6}
-                       ;; Inactive tab appearance
-                       :inactive_tab {:bg_color nord1 :fg_color nord4}
-                       ;; Hover state for inactive tabs
-                       :inactive_tab_hover {:bg_color nord3
-                                            :fg_color nord5
+;; -------------------------------------------------------------------------
+;; Nord Color Scheme
+;; -------------------------------------------------------------------------
+
+; (local tab-bar-config {:background "#2E3440"
+;                        :active_tab {:bg_color "#2E3440" :fg_color "#ECEFF4"}
+;                        :inactive_tab {:bg_color "#3B4252" :fg_color "#D8DEE9"}
+;                        :inactive_tab_hover {:bg_color "#4C566A"
+;                                             :fg_color "#E5E9F0"
+;                                             :italic true}
+;                        :new_tab {:bg_color "#3B4252" :fg_color "#D8DEE9"}
+;                        :new_tab_hover {:bg_color "#4C566A"
+;                                        :fg_color "#E5E9F0"
+;                                        :italic true}})
+
+;; -------------------------------------------------------------------------
+;; Gruvbox Color Scheme
+;; -------------------------------------------------------------------------
+
+(local tab-bar-config {:background "#282828"
+                       :active_tab {:bg_color "#282828" :fg_color "#FBF1C7"}
+                       :inactive_tab {:bg_color "#3C3836" :fg_color "#D5C4A1"}
+                       :inactive_tab_hover {:bg_color "#665C54"
+                                            :fg_color "#EBDBB2"
                                             :italic true}
-                       ;; New tab button appearance
-                       :new_tab {:bg_color nord1 :fg_color nord4}
-                       ;; Hover state for new tab button
-                       :new_tab_hover {:bg_color nord3
-                                       :fg_color nord5
+                       :new_tab {:bg_color "#3C3836" :fg_color "#D5C4A1"}
+                       :new_tab_hover {:bg_color "#665C54"
+                                       :fg_color "#EBDBB2"
                                        :italic true}})
 
 ;; =============================================================================
@@ -124,8 +115,8 @@
         :tab_bar_at_bottom false
         :use_fancy_tab_bar true
         :colors {:tab_bar tab-bar-config}
-        :window_frame {:active_titlebar_bg nord0
-                       :inactive_titlebar_bg nord0
+        :window_frame {:active_titlebar_bg "#282828"
+                       :inactive_titlebar_bg "#282828"
                        :font_size 16.0
                        :font (wezterm.font {:family "Hack Nerd Font"
                                             :weight :Bold})}
@@ -137,7 +128,7 @@
         ;; -------------------------------------------------------------------------
         ;; Theme and Appearance
         ;; -------------------------------------------------------------------------
-        :color_scheme "Nord (Gogh)"
+        :color_scheme "Gruvbox Dark (Gogh)"
         ;; -------------------------------------------------------------------------
         ;; Performance Settings
         ;; -------------------------------------------------------------------------
