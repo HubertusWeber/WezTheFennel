@@ -99,7 +99,7 @@
         ;; Font Configuration
         ;; -------------------------------------------------------------------------
         :font (wezterm.font {:family "Hack Nerd Font"})
-        :font_size 18.0
+        :font_size 19.0
         :line_height 1.2
         ;; -------------------------------------------------------------------------
         ;; Window Configuration
