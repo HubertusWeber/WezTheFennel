@@ -78,6 +78,15 @@
          :mods "CMD"
          :action (act.ActivatePaneDirection "Right")}
         ;; -------------------------------------------------------------------------
+        ;; Special Keybind for Neovim
+        ;; -------------------------------------------------------------------------
+        {:key "Enter"
+         :mods "CMD"
+         :action (act.SendKey {:key "o" :mods "CTRL"})}
+        {:key "n" :mods "CMD" :action (act.SendKey {:key "y" :mods "CTRL"})}
+        {:key "e" :mods "CMD" :action (act.SendKey {:key "g" :mods "CTRL"})}
+        {:key "i" :mods "CMD" :action (act.SendKey {:key "f" :mods "CTRL"})}
+        ;; -------------------------------------------------------------------------
         ;; Pane Resizing
         ;; -------------------------------------------------------------------------
         ;; Hold Shift with navigation keys to resize
